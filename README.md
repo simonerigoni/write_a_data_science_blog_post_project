@@ -31,6 +31,8 @@ This project uses Python 3.7.2 and the following libraries:
 * [TextBlob](https://textblob.readthedocs.io/en/dev/)
 * WordCloud
 
+More informations in `requirements.txt`. To create it I have used `python -m pip freeze > requirements.txt`. To install all Python packages written in the requirements.txt file run `pip install -r requirements.txt`.
+
 ## Data
 The dataset is provided by [Airbnb](http://insideairbnb.com/get-the-data.html) and is basically composed by:
 * **listings.csv**: Detailed Listings data for Milan
