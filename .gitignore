@@ -8,3 +8,14 @@ Include/
 Lib/
 Scripts/
 pyvenv.cfg
+
+# Ignore the jupyter directories
+
+.ipynb_checkpoints/
+share/
+
+# Ignore data files that are too big (Github limit dimension 100 MB)
+
+data/calendar.csv
+data/output_reviews.csv
+data/reviews.csv
