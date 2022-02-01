@@ -54,12 +54,6 @@ If you donwload it simply run the command `jupyter notebook neighborhoods_sentim
 
 Results are better explained in this [blog post](https://medium.com/@simone.rigoni01/do-you-want-to-move-to-milan-neighborhoods-sentiment-analysis-using-airbnb-data-72db72ebc070?sk=52ad4741d36bb8a3005b2ad13832d622)
 
-## TODO
-
-* 0 - Delete this TODO section when all the tasks are working properly
-* 1 - It would be nice to see on a map of Milan with the score of each neighborhood
-
-
 ## Licensing and Acknowledgements
 
 Thank you [Airbnb](https://www.airbnb.com/) for the datasets and more information about the licensing of the data can be find [here](http://insideairbnb.com/about.html).
