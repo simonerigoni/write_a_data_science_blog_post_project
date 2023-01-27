@@ -52,7 +52,7 @@ If you donwload it simply run the command `jupyter notebook neighborhoods_sentim
 
 ## Results
 
-Results are better explained in this [blog post](https://medium.com/@simone.rigoni01/do-you-want-to-move-to-milan-neighborhoods-sentiment-analysis-using-airbnb-data-72db72ebc070?sk=52ad4741d36bb8a3005b2ad13832d622) and [here](https://simonerigoni01.blogspot.com/2022/12/do-you-want-to-move-to-milan.html) you can find the italian version.
+Results are better explained in this [blog post](https://medium.com/@simone.rigoni01/do-you-want-to-move-to-milan-neighborhoods-sentiment-analysis-using-airbnb-data-72db72ebc070?sk=52ad4741d36bb8a3005b2ad13832d622) and you can find the italian version [here](https://simonerigoni01.blogspot.com/2022/12/do-you-want-to-move-to-milan.html).
 
 ## Licensing and Acknowledgements
 
