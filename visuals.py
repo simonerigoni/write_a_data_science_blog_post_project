@@ -18,8 +18,8 @@ def heatmap(data, plt_show=True):
     Heatmap visualization.
 
     Parameters:
-        data: data
-        plt_show: if True the plot will be shown. Otherwise the plot will be saved in IMAGES_FOLDER
+        data: Data
+        plt_show: If True the plot will be shown. Otherwise the plot will be saved in IMAGES_FOLDER
 
     Returns:
         None
@@ -43,9 +43,9 @@ def histogram(labels, values, plt_show=True):
     Histogram visualization.
 
     Parameters:
-        labels: labels
-        values: values
-        plt_show: if True the plot will be shown. Otherwise the plot will be saved in IMAGES_FOLDER
+        labels: Labels
+        values: Values
+        plt_show: If True the plot will be shown. Otherwise the plot will be saved in IMAGES_FOLDER
 
     Returns:
         None
