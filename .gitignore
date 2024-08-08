@@ -8,8 +8,8 @@
 ## Virtual enviroment folder
 .venv/
 
-## Snippets of code and other stuff
-others/
+## Temp stuff
+temp/
 
 ## Logs
 logs/
