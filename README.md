@@ -39,6 +39,7 @@ More informations in `requirements.txt`. I am providing a simplified version of 
 
 To create a complete requirements file you can run `pip freeze > requirements.txt` and to install all python packages in it you can run `pip install -r requirements.txt`.
 
+To setup a new enviroment and install all requirements you can go in folder `others` and run `setup.cmd`
 
 ## Data
 
@@ -82,7 +83,7 @@ I prefere to check and update one file at the time because the previous recursiv
 
 `autopep8 --in-place .\utils\configuration.py`
 
-Check out the scripts in `.\code_styling`. From the project folder you can run `.\code_styling\format_and_lint.cmd`
+You can go in folder `code_styling` and run `format_and_lint.cmd`.
 
 ## Running the code
 
