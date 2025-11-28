@@ -1,6 +1,6 @@
 # Visuals
 #
-# python -m utils.visuals
+# python -m src.visuals
 
 
 import matplotlib.pyplot as plt
@@ -10,7 +10,7 @@ import pandas as pd
 import seaborn as sns
 
 
-import utils.configuration as conf
+from src.config import IMAGES_FOLDER
 
 
 def heatmap(data, plt_show=True):
@@ -31,7 +31,7 @@ def heatmap(data, plt_show=True):
     if plt_show is True:
         plt.show()
     else:
-        output_image_path = conf.IMAGES_FOLDER
+        output_image_path = IMAGES_FOLDER
 
         output_image_path = output_image_path + 'heatmap.png'
 
@@ -57,7 +57,7 @@ def histogram(labels, values, plt_show=True):
     if plt_show is True:
         plt.show()
     else:
-        output_image_path = conf.IMAGES_FOLDER
+        output_image_path = IMAGES_FOLDER
 
         output_image_path = output_image_path + 'histogram.png'
 

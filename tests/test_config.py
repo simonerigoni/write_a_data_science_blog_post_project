@@ -1,17 +1,12 @@
-# Test configuration
+# Test conf
 #
-# python test_configuration.py
+# python test_conf.py
 
 import os
 import shutil
 
 
-import utils.configuration as conf
-
-
-def test__dummy():
-    test_result = 42 == 42
-    assert test_result
+import src.config as conf
 
 
 def test_create_folders():

@@ -1,6 +1,6 @@
-# Configuration
+# Config
 #
-# python -m utils.configuration
+# python -m src.config
 
 import os
 
@@ -35,7 +35,7 @@ def create_folders(folders=[DATA_FOLDER, IMAGES_FOLDER]):
 
 
 if __name__ == '__main__':
-    print('Configuration')
+    print('Config')
     print(f'{DATA_FOLDER = }')
     print(f'{IMAGES_FOLDER = }')
 
