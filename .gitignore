@@ -1,27 +1,25 @@
-# Generic file extensions to ignore
+# Files, directories or patterns that should be excluded from Git tracking
 
-## Python compiled files
-*.pyc
-
-# My project folders and files to ignore
-
-## Virtual enviroment folder
-.venv/
-
-## pytest cache files 
-.pytest_cache/
-
-## Temp stuff
+# Temp stuff
 temp/
 
-## Logs
-logs/
+# Python compiled files
+*.pyc
 
-## Code styling reports
-code_styling/*.txt
+# Virtual enviroment
+.venv/
 
-## Ignore data files that are too big for github (limit dimension 100 MB)
+# Pytest cache
+.pytest_cache/
 
+# Ruff cache
+.ruff_cache/
+
+# uv stuff
+.python-version
+uv.lock
+
+# Big files
 data/calendar.csv
 data/output_reviews.csv
 data/reviews.csv
