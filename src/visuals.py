@@ -22,8 +22,6 @@ def heatmap(data, plt_show=True):
     Returns:
         None
     """
-    fig = plt.figure(figsize=(22, 22))
-
     sns.heatmap(data, cmap="Blues", cbar=False)
 
     if plt_show is True:
@@ -48,7 +46,6 @@ def histogram(labels, values, plt_show=True):
     Returns:
         None
     """
-    fig = plt.figure(figsize=(20, 10))
     plt.bar(labels, values)
     plt.xticks(rotation=45)
 
@@ -74,7 +71,6 @@ def histogram(labels, values, plt_show=True):
 #     Returns:
 #         None
 #     """
-#     fig = plt.figure(figsize = (20, 10))
 #     plt.bar(labels, values)
 #     plt.xticks(rotation=45)
 
