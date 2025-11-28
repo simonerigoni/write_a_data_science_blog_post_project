@@ -3,6 +3,7 @@
 ## Introduction
 
 This project is part of The [Udacity](https://eu.udacity.com/) Data Scientist Nanodegree Program which is composed by:
+
 * Term 1
     * Supervised Learning
     * Deep Learning
@@ -13,6 +14,7 @@ This project is part of The [Udacity](https://eu.udacity.com/) Data Scientist Na
     * Recommendation Engines
 
 The goal of this project is to put in practice the technical skills teached during the program but manly to focus on the ability to effectively communicate the results of the analysis. In particular the **CRISP-DM Process** (Cross Industry Process for Data Mining) which is composed by the following steps:
+
 1. Business Understanding
 2. Data Understanding
 3. Prepare Data
@@ -22,7 +24,7 @@ The goal of this project is to put in practice the technical skills teached duri
 
 ## Software and Libraries
 
-This project uses Python 3.10.4 and the most important packages are:
+This project uses Python 3.11 and the most important packages are:
 
 * [NumPy](http://www.numpy.org/)
 * [Pandas](http://pandas.pydata.org)
@@ -33,59 +35,29 @@ This project uses Python 3.10.4 and the most important packages are:
 * [TextBlob](https://textblob.readthedocs.io/en/dev/)
 * WordCloud
 
-To create the virtual enviroment you can run `python -m venv .venv`.
+## Local configuration
 
-More informations in `requirements.txt`. I am providing a simplified version of the file and letting pip handle the dependencies to avoid maintenance overhead.
+To setup a new local enviroment and install all dependencies you can run `.\my_scripts\Set-Up.ps1`. It will install:
 
-To create a complete requirements file you can run `pip freeze > requirements.txt` and to install all python packages in it you can run `pip install -r requirements.txt`.
+* [Python](https://www.python.org/)
+* [uv](https://docs.astral.sh/uv/)
+* [Pre-commit](https://pre-commit.com/)
 
-To setup a new enviroment and install all requirements you can go in folder `others` and run `setup.cmd`
+Pre-commit is a framework for managing and maintaining multi-language pre-commit hooks. A pre-commit hook is a script that runs before a commit operation in a version control system. This allows to shift left code quality checks and remediations. You can change the hooks by updateing the file `.pre-commit-config.yaml`.
+
+To trigger the pre-commit hooks without an actual commit you can run `pre-commit run --all-files -v`.
 
 ## Data
 
-The dataset is provided by [Airbnb](http://insideairbnb.com/get-the-data.html) and is basically composed by:
-
-* **listings.csv**: Detailed Listings data for Milan
-* **calendar.csv**: Detailed Calendar Data for listings in Milan
-* **reviews.csv**: Detailed Review Data for listings in Milan
-* **summary_listings.csv**: Summary information and metrics for listings in Milan (good for visualisations).
-* **summary_reviews.csv**: Summary Review data and Listing ID (to facilitate time based analytics and visualisations linked to a listing).
-* **neighbourhoods.csv**: Neighbourhood list for geo filter. Sourced from city or open source GIS files.
-* **neighbourhoods.geojson**: GeoJSON file of neighbourhoods of the city.
-
-To map the neighbourhood in the dataset to the real neighbourhood I have created the file **data/quartieri.txt** which contains the real neighbourhood of Milan.
-
-## Workflow
-
-The code is provided in the [Jupyter Notebook](http://ipython.org/notebook.html) _neighborhoods_sentiment_analysis.ipynb_. It will read the data from `DATA_FOLDER` and step by step explore the data TODO.
+Have a look at the `data` folder and its [DATA.md](data/DATA.md) file.
 
 ## Testing
 
-From the project folder run `pytest`
-
-To run a single test: `pytest .\tests\test_configuration.py::test_create_folders`
-
-## Code styling
-
-[PEP8](https://peps.python.org/pep-0008/) is the style guide for Python code, and it's good practice to follow it to ensure your code is readable and consistent.
-
-To check and format my code according to PEP8 I am using:
-- [pycodestyle](https://pypi.org/project/pycodestyle/): tool to check the code against PEP 8 conventions.
-- [autopep8](https://pypi.org/project/autopep8/): tool to automatically format Python code according to PEP 8 standards.
-
-To run pycodestyle on all files in the project folder and create a report: `pycodestyle --statistics --count . > code_styling/report.txt`
-
-To run autopep8 on all files in the project folder: `autopep8 --recursive --in-place .`
-
-I prefere to check and update one file at the time because the previous recursive commands affect also `.venv\` files. For example:
-
-`pycodestyle .\utils\configuration.py > .\code_styling\configuration_report.txt`
-
-`autopep8 --in-place .\utils\configuration.py`
-
-You can go in folder `code_styling` and run `format_and_lint.cmd`.
+No test implemented.
 
 ## Running the code
+
+The code is provided in the [Jupyter Notebook](http://ipython.org/notebook.html) _neighborhoods_sentiment_analysis.ipynb_. It will read the data from `DATA_FOLDER` and step by step explore the data TODO.
 
 You can open _neighborhoods_sentiment_analysis.ipynb_ and run each cell and check their results.
 
@@ -95,15 +67,28 @@ To convert the notebook in HTML format run `jupyter nbconvert neighborhoods_sent
 
 ## Results
 
-TODO: describe results
+The goal of the project was to answer to at least three questions related to business or real-world applications of how the data could be used so I have chosen:
+1. Which are the 5 neighborhood with highest score?
+2. Which are the 5 neighborhood with lowest score?
+3. How different is the overview of the neighborhood given from the hosts from the one given by the guests?
+
+The answers to our questions are:
+
+![top_5_neighborhood](images/top_5_neighborhood.JPG)
+
+![last_5_neighborhood](images/last_5_neighborhood.JPG)
+
+On average the sentiment of the neighborhood given by the contextual sentences of the review of the guests is way higher compared to the **neighborhood_overview** given by the hosts. One possible explanation could be the wide length of the **neighborhood_overview** text that negatively influences the sentiment analysis score. Whereas the extraction of only useful sentences allows to clear up the string used for the analysis, giving an overall higher score.
+
+![report](images/report.JPG)
 
 ## List of activities
 
-In the [TODO](TODO.md) file you can find the list of tasks and on going activities.
+In the [TODO.md](TODO.md) file you can find the list of tasks and on going activities.
 
 ## Licensing and acknowledgements
 
-Thank you [Airbnb](https://www.airbnb.com/) for the datasets and more information about the licensing of the data can be find [here](http://insideairbnb.com/about.html).
+Have a look at [LICENSE.md](LICENSE.md) and many thanks to [Airbnb](https://www.airbnb.com/) for the datasets and more information about the licensing of the data can be find [here](http://insideairbnb.com/about.html).
 
 ## Outro
 
