@@ -4,7 +4,6 @@
 
 import os
 import numpy as np
-import pandas as pd
 
 
 from src.config import IMAGES_FOLDER
@@ -16,7 +15,7 @@ def test_heatmapn():
 
     vs.heatmap(test_data_heatmap, plt_show=False)
 
-    output_image_path = IMAGES_FOLDER + 'heatmap.png'
+    output_image_path = IMAGES_FOLDER + "heatmap.png"
 
     test_result = os.path.exists(output_image_path)
     os.remove(output_image_path)

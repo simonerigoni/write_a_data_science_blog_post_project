@@ -10,7 +10,7 @@ import src.config as conf
 
 
 def test_create_folders():
-    test_folder = 'test_folder'
+    test_folder = "test_folder"
     if not os.path.exists(test_folder):
         pass
     else:

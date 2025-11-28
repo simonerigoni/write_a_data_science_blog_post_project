@@ -5,8 +5,8 @@
 import os
 
 
-DATA_FOLDER = 'data/'
-IMAGES_FOLDER = 'images/'
+DATA_FOLDER = "data/"
+IMAGES_FOLDER = "images/"
 
 
 def create_folders(folders=[DATA_FOLDER, IMAGES_FOLDER]):
@@ -34,10 +34,10 @@ def create_folders(folders=[DATA_FOLDER, IMAGES_FOLDER]):
             print(f"Folder '{current_folder}' already exists.")
 
 
-if __name__ == '__main__':
-    print('Config')
-    print(f'{DATA_FOLDER = }')
-    print(f'{IMAGES_FOLDER = }')
+if __name__ == "__main__":
+    print("Config")
+    print(f"{DATA_FOLDER = }")
+    print(f"{IMAGES_FOLDER = }")
 
     create_folders()
 else:

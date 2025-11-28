@@ -4,9 +4,7 @@
 
 
 import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
 import numpy as np
-import pandas as pd
 import seaborn as sns
 
 
@@ -26,14 +24,14 @@ def heatmap(data, plt_show=True):
     """
     fig = plt.figure(figsize=(22, 22))
 
-    sns.heatmap(data, cmap='Blues', cbar=False)
+    sns.heatmap(data, cmap="Blues", cbar=False)
 
     if plt_show is True:
         plt.show()
     else:
         output_image_path = IMAGES_FOLDER
 
-        output_image_path = output_image_path + 'heatmap.png'
+        output_image_path = output_image_path + "heatmap.png"
 
         plt.savefig(output_image_path)
 
@@ -59,7 +57,7 @@ def histogram(labels, values, plt_show=True):
     else:
         output_image_path = IMAGES_FOLDER
 
-        output_image_path = output_image_path + 'histogram.png'
+        output_image_path = output_image_path + "histogram.png"
 
         plt.savefig(output_image_path)
 
@@ -111,13 +109,13 @@ def histogram(labels, values, plt_show=True):
 #     TODO
 
 
-if __name__ == '__main__':
-    print('Visuals')
+if __name__ == "__main__":
+    print("Visuals")
 
     test_data_heatmap = np.random.rand(10, 10)
     heatmap(test_data_heatmap, plt_show=False)
 
-    test_labels_histogram = ['A', 'B', 'C', 'D', 'E']
+    test_labels_histogram = ["A", "B", "C", "D", "E"]
     test_values_histogram = [5, 7, 3, 8, 6]
     histogram(test_labels_histogram, test_values_histogram, plt_show=False)
 else:

@@ -10,7 +10,7 @@ def test_jupyter_notebook():
     result = subprocess.run(
         ["ipython", "-c", '"%run neighborhoods_sentiment_analysis.ipynb"'],
         capture_output=True,  # Capture stdout and stderr
-        text=True             # Get output as string
+        text=True,  # Get output as string
     )
 
     if result.returncode != 0:
