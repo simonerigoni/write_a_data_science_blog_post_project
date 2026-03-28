@@ -15,11 +15,10 @@ temp/
 # Ruff cache
 .ruff_cache/
 
-# uv stuff
-.python-version
-uv.lock
-
 # Big files
 data/calendar.csv
 data/output_reviews.csv
 data/reviews.csv
+
+# pytest-cov stuff
+.coverage
