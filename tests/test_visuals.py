@@ -3,11 +3,11 @@
 # python test_visuals.py
 
 import os
+
 import numpy as np
 
-
-from src.config import IMAGES_FOLDER
 import src.visuals as vs
+from src.config import IMAGES_FOLDER
 
 
 def test_heatmapn():
