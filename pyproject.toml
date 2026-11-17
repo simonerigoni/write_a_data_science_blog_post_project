@@ -4,6 +4,9 @@ version = "0.1.0"
 description = "Write a data science blog post project"
 readme = "README.md"
 requires-python = ">=3.15"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE.md"]
+authors = [{ name = "Simone Rigoni" }]
 dependencies = [
     "ipykernel>=7.1.0",
     "nltk>=3.10.0",
@@ -13,6 +16,11 @@ dependencies = [
     "textblob>=0.19.0",
     "wordcloud>=1.9.4",
 ]
+
+
+[project.urls]
+Homepage = "https://github.com/simonerigoni/write_a_data_science_blog_post_project"
+Repository = "https://github.com/simonerigoni/write_a_data_science_blog_post_project"
 
 [dependency-groups]
 dev = [
