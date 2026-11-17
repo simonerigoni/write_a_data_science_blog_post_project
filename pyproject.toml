@@ -4,6 +4,9 @@ version = "0.1.0"
 description = "Write a data science blog post project"
 readme = "README.md"
 requires-python = ">=3.15"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE.md"]
+authors = [{ name = "Simone Rigoni" }]
 dependencies = [
     "ipykernel>=7.1.0",
     "nltk>=3.10.0",
@@ -13,6 +16,13 @@ dependencies = [
     "textblob>=0.19.0",
     "wordcloud>=1.9.4",
 ]
+
+
+[project.urls]
+Repository = "https://github.com/simonerigoni/write_a_data_science_blog_post_project"
+Website = "https://www.simonerigoni.net/blog/do-you-want-to-move-to-milanneighborhoods-sentiment-analysis-using-airbnb"
+Medium = "https://medium.com/data-science/do-you-want-to-move-to-milan-neighborhoods-sentiment-analysis-using-airbnb-data-72db72ebc070"
+Blogspot = "https://simonerigoni01.blogspot.com/2022/12/do-you-want-to-move-to-milan.html"
 
 [dependency-groups]
 dev = [
