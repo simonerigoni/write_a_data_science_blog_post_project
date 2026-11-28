@@ -22,3 +22,4 @@ data/reviews.csv
 
 # pytest-cov stuff
 .coverage
+COVERAGE.md
